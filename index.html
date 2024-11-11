@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Time Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <!-- HTML Goes here! -->
+    <section id="cardContainer">
+      <div id="detailCard">
+        <div id="person">
+          <img src="images/image-jeremy.png" alt="Jeremy picture" />
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+        <div id="info">
+          <p class="time-frame active">Daily</p>
+          <p class="time-frame">weekly</p>
+          <p class="time-frame">Monthly</p>
+        </div>
+      </div>
+      <div class="design" id="work">
+        <div class="timings">
+          <div class="title">
+            <h5>Work</h5>
+            <img class="dots" src="images/icon-ellipsis.svg" alt="dots" />
+          </div>
+          <h2>32hrs</h2>
+          <p>Last week- 36hrs</p>
+        </div>
+      </div>
+      <div class="design" id="play">
+        <div class="timings">
+          <div class="title">
+            <h5>Play</h5>
+            <img class="dots" src="images/icon-ellipsis.svg" alt="dots" />
+          </div>
+          <h2>10hrs</h2>
+          <p>Last week-8hrs</p>
+        </div>
+      </div>
+      <div class="design" id="study">
+        <div class="timings">
+          <div class="title">
+            <h5>Study</h5>
+            <img class="dots" src="images/icon-ellipsis.svg" alt="dots" />
+          </div>
+          <h2>4hrs</h2>
+          <p>Last week-7hrs</p>
+        </div>
+      </div>
+      <div class="design" id="exercise">
+        <div class="timings">
+          <div class="title">
+            <h5>Exercise</h5>
+            <img class="dots" src="images/icon-ellipsis.svg" alt="dots" />
+          </div>
+          <h2>4hrs</h2>
+          <p>Last week-5hrs</p>
+        </div>
+      </div>
+      <div class="design" id="social">
+        <div class="timings">
+          <div class="title">
+            <h5>Social</h5>
+            <img class="dots" src="images/icon-ellipsis.svg" alt="dots" />
+          </div>
+          <h2>5hrs</h2>
+          <p>Last week-10hrs</p>
+        </div>
+      </div>
+      <div class="design" id="selfcare">
+        <div class="timings">
+          <div class="title">
+            <h5>Selfcare</h5>
+            <img class="dots" src="images/icon-ellipsis.svg" alt="dots" />
+          </div>
+          <h2>2hrs</h2>
+          <p>Last week-2hrs</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

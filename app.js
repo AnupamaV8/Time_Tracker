@@ -58,9 +58,15 @@ function updateTimeCards() {
       // Update text based on the selected time frame
       if (currentHours && previousHours) {
         currentHours.textContent = `${activity[currentTimeFrame].current}hrs`;
-        previousHours.textContent = `Last ${capitalizeFirstLetter(
-          currentTimeFrame
-        )} - ${activity[currentTimeFrame].previous}hrs`;
+        if (currentTimeFrame === "daily")
+          previousHours.textContent = ` Yesterday - ${activity[currentTimeFrame].previous}hrs`;
+        else if (currentTimeFrame === "weekly")
+          previousHours.textContent = `
+            Last week -
+          ${activity[currentTimeFrame].previous}hrs`;
+        else if (currentTimeFrame === "monthly")
+          previousHours.textContent = ` 
+             Last month - ${activity[currentTimeFrame].previous}hrs`;
       }
     } else {
       console.warn(

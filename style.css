@@ -151,6 +151,9 @@ h5 {
   background-size: 35px;
 }
 @media screen and (max-width: 768px) {
+  body {
+    align-items: start;
+  }
   #cardContainer {
     width: 90%; /* Adjust width for smaller screens */
     grid-template-columns: repeat(2, auto);
@@ -167,14 +170,12 @@ h5 {
     grid-template-columns: 1fr; /* Stack all cards in a single column */
     margin: 10px;
     gap: 20px;
-    width: 100%;
-  }
-  #detailCard {
-    width: 100%; /* Full width for the detail card */
+    width: auto;
   }
 
   #info {
     display: flex;
     justify-content: space-evenly;
+    gap: 3px;
   }
 }
